@@ -1,1 +1,18 @@
 // Mixins in here
+
+.display-justify-align() {
+    display: flex;
+    justify-content: @justify;
+    align-content: @align;
+
+}
+
+.button-mixin(@button-bg, @white) {
+    background-color: @button-bg;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: @white;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
